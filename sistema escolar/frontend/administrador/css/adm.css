@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo h1{
+    padding-top: .5rem;
+    font-size: 25px;
+    padding-right: 43rem;
+}
+
+.topo .imagem{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80px;
+    height: 60px;
+    padding-left: 5rem;
+  
+}
+
+/*navbar*/
+
+.navbar{
+    height: 5rem;
+
+}
+
+.navbar .nav{
+    background-color: rgb(20, 20, 20);
+    margin: 0rem 3rem;
+    padding: 0rem 2rem;
+    height: 2rem;
+}
+
+.navbar .nav ul{
+    display: flex;
+    position: relative;
+    padding-top: .45rem;
+}
+
+.navbar .nav li{
+   /* padding: 0rem .75rem;*/
+   margin: 0rem .65rem;
+   list-style: none;
+}
+
+.navbar .nav a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav .interna{
+   background-color: rgb(20, 20, 20);
+ /*position: absolute;*/
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.nav .interna li:hover{
+    background-color: rgb(49, 46, 46); 
+}
+
+.nav .interna li{
+    padding-left: .35rem;
+    padding: .15rem 0rem;
+  
+}
+
+.nav ul .interna{
+    display: none;
+}
+
+.nav ul li:hover .interna{
+    display: block;
+    width: 100%;
+}
+
+

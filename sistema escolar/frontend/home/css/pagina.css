@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.topo{
+    /*background-color: aquamarine;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h h1{
+    padding-top: .5rem;
+    font-size: 25px;
+    padding-right: 43rem;
+}
+
+.img .imagem{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80px;
+    height: 60px;
+    padding-left: 5rem;
+  
+}
+
+.navbar{
+    background-color: rgb(143, 192, 176);
+}
+
+.nav-ul{
+    padding-left: 30px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.nav-ul .nav-a{
+    text-decoration: none;
+}
+
+
+/*Form*/
+
+.formulario{
+    /* background-color: rgb(243, 243, 243);*/
+    background-color: rgb(243, 243, 243);
+    height: 25rem;
+    
+    padding-top: 2rem;
+}
+
+.formulario .form{
+    padding: 0rem 9rem;
+    /*background-color: rgb(73, 109, 109);*/
+}
+
+fieldset{
+    height: 20rem;
+    border: 0.20rem solid rgb(77, 51, 17);
+}
+fieldset .legenda{
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.corpo{
+    position: relative;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+.corpo input{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: .15rem solid black;
+    width: 20rem;
+}
+
+.inputUser:focus ~.labeUser
+/*.inputUser:valid ~.labeUser*/{
+    top: -2px;
+    font-size: 12px;
+    font-weight: bold
+
+}
+
+.corpo label{
+    position: absolute;
+    pointer-events: none;
+    transition: .20s;
+}
+/*
+fieldset .button{
+    
+    text-align: center;
+   
+}*/
+
+.butao{
+    display: flex;
+    justify-content: center;
+}
+
+.butao button{
+    border: none;
+    background-color: rgb(16, 80, 80);
+    width: 7rem;
+    height: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+/*footer*/
+.futer{
+    background-color: rgb(48, 48, 48);
+}
+
+.futer p{
+    padding-top: .5rem;
+    padding-left: 2rem;
+    color: white;
+}
+
+.futer .futer-link a{
+    padding-top: .5rem;
+    padding-left: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.futer .futer-link{
+    padding-top: .5rem;
+    list-style: none;
+    
+}
+
+@media only screen and (min-width:800px) and (max-width:932px) {
+    *{
+        overflow-x: hidden; 
+    }
+  
+    .topo{
+        width: 100%
+   
+    }
+
+    .img {
+        width: 15rem;
+     }
+
+    .img .imagem {
+        padding-left: 1.4rem;
+     }
+   
+
+    /*formulario*/
+    .formulario{
+        justify-content: center;
+        padding-top: 6rem;
+        width:100%;
+        height: 30rem;
+    }
+
+    .formulario .form{
+        padding: 0px 50px;
+        height: 25rem;
+      
+
+    }
+}
