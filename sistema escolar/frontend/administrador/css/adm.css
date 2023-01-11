@@ -1,23 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-
+    
 }
 
 
 .topo{
+    background-color: #F5F3F3;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.topo h1{
+.h h1{
     padding-top: .5rem;
     font-size: 25px;
     padding-right: 43rem;
 }
 
-.topo .imagem{
+.img .imagem{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 80px;
@@ -27,60 +28,180 @@
 }
 
 /*navbar*/
-
 .navbar{
-    height: 5rem;
-
+    background-color: rgb(0, 0, 0);
+    margin: 1rem 1rem;
+    height: 2.35rem;
 }
 
-.navbar .nav{
-    background-color: rgb(20, 20, 20);
-    margin: 0rem 3rem;
-    padding: 0rem 2rem;
-    height: 2rem;
-}
-
-.navbar .nav ul{
+.navbar .nav_ul{
     display: flex;
-    position: relative;
-    padding-top: .45rem;
+
 }
 
-.navbar .nav li{
-   /* padding: 0rem .75rem;*/
-   margin: 0rem .65rem;
-   list-style: none;
-}
-
-.navbar .nav a{
-    color:white;
+.navbar .nav_ul li{
+    margin: .55rem .45rem;
+    list-style: none;
+    color: white;
     text-decoration: none;
 }
 
-.nav .interna{
-   background-color: rgb(20, 20, 20);
- /*position: absolute;*/
-    flex-direction: column;
-    margin-top: 3px;
-}
-
-.nav .interna li:hover{
-    background-color: rgb(49, 46, 46); 
-}
-
-.nav .interna li{
-    padding-left: .35rem;
-    padding: .15rem 0rem;
-  
-}
-
-.nav ul .interna{
+/*link interno*/
+.navbar .nav_ul .dentro_ul{
     display: none;
-}
-
-.nav ul li:hover .interna{
-    display: block;
+    background-color: rgb(0, 0, 0);
     width: 100%;
+    margin: 0rem .50rem;
+}
+
+.navbar .nav_ul .dentro_ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav_ul .dentro_ul:hover{
+    background-color: rgb(49, 45, 45);
+}
+
+.navbar .nav_ul li:hover .dentro_ul{
+    display: block;
+}
+
+/*Eventos*/
+
+.eventos{
+   /* background-color: aquamarine;*/
+    margin: 2rem 1rem;
+
+}
+.eventos .linha{
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+.eventos .btn_novo{
+    display: flex;
+    width:6rem;
+    height: 2rem;
+    margin-left: 58rem;
+}
+.eventos .btn_novo button{
+    background-color: #1D5E52;
+    border-radius: 1rem;
+    color: white;
+    width: 100%;
+    box-shadow: .1rem .25rem rgb(170, 166, 166);
+    border: none;
+}
+
+.eventos .cartas{
+    display: flex;
+    margin: 1rem 1rem;
+}
+
+.cartas .slides{
+    display: flex;
+}
+
+.cartas .slides .cartas_slides{
+    background-color: #FCF7F7;
+    margin: 0rem .75rem;
+    border-radius: 1.20rem;
+    max-width: 7rem;
+    box-shadow: .1rem .25rem rgb(170, 166, 166);
+}
+
+.cartas .cartas_slides .img{
+    display: flex;
+    justify-content: center;
+}
+
+.cartas .cartas_slides .texto{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: .20rem .40rem;
+    border-radius: 1rem;
+    color: white;
+}
+/*
+.eventos .cartas .cartas_im{
+    background-color: rgb(76, 82, 87);
+    width: 2px;
+}
+
+.eventos .cartas .cartas_im img{
+    background-color: aquamarine;
+
+}
+
+.eventos .cartas .cartas_im p{
+    text-align: center;
+}
+*/
+.eventos .cartas .cartas_slides img{
+    
+    height: 5rem;
+    width: 5rem;
+    margin: 10px 10px;
+    border-radius: 50%;
+    border: .25rem solid rgb(49, 49, 48);
+}
+
+/*Diretoria*/
+
+.diretoria{
+    /* background-color: aquamarine;*/
+     margin: 2rem 1rem;
+ 
+ }
+ .diretoria .linha{
+     font-weight: bold;
+     margin-top: -1rem;
+ }
+ 
+ .diretoria .btn_novo{
+     display: flex;
+     width:6rem;
+     height: 2rem;
+     margin-left: 58rem;
+ }
+ .diretoria .btn_novo button{
+     background-color: #1D5E52;
+     border-radius: 1rem;
+     color: white;
+     width: 100%;
+     box-shadow: .1rem .25rem rgb(170, 166, 166);
+     border: none;
+}
+
+/*tabela*/
+.tabela{
+    background-color: #F2EFEC;
+    width: 50rem;
+    margin: 1rem 7rem;
+    box-shadow: .1rem .25rem rgb(170, 166, 166);
+}
+
+.ta_cabeca .ta_th{
+    background-color: #070707;
+    width: 2rem;
+    color: white;
+}
+
+.ta_tr .ta_td{
+    background-color: #FCF7F7;
+    text-align: center;
+
+}
+
+.ta_tr .ta_td a{
+    text-decoration: none;
+    color: #070707;
+    margin: 0rem .20rem;
 }
 
 
+.ta_cabeca .ta_the{
+    background-color: #F2EFEC;
+    width: 2rem;
+}
