@@ -194,14 +194,48 @@
 
 }
 
-.ta_tr .ta_td a{
-    text-decoration: none;
+.ta_tr .ta_td button{
+    border: none;
     color: #070707;
     margin: 0rem .20rem;
+    border-radius: .20rem;
 }
 
+.ta_tr .ta_td .deletar:hover{
+    background-color: rgb(172, 30, 30);
+    transition: .20s;
+}
 
+.ta_tr .ta_td .editar:hover{
+    background-color: rgb(143, 143, 16);
+    transition: .20s;
+}
 .ta_cabeca .ta_the{
     background-color: #F2EFEC;
     width: 2rem;
+}
+
+/*Rodape*/
+footer{
+    background-color: #070707;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    width: 65.9rem;
+    height: 4rem;
+}
+
+footer .inf{
+    margin: 0rem 2rem;
+    color: white;
+}
+
+footer .inf .links {
+    margin: 0rem 2rem;
+}
+
+footer .inf .links a{
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+    
 }
