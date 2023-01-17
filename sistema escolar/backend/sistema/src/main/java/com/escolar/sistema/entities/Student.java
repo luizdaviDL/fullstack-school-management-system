@@ -1,4 +1,4 @@
-package entities;
+package com.escolar.sistema.entities;
 
 import java.util.Random;
 
@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -26,6 +27,7 @@ public class Student {
 	private String email;
 	private String genre; /*genero*/
 	private String birthDate;
+	@OneToOne
 	private Classe classe; /*Turma*/
 	private boolean status;
 	

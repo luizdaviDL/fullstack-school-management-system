@@ -1,4 +1,4 @@
-package entities;
+package com.escolar.sistema.entities;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,6 +23,7 @@ public class Teacher {
 	private String email;
 	private String genre; /*genero*/
 	private String birthDate;
+	@OneToMany
 	private List<Subject> especialty;
 	private boolean status;
 	

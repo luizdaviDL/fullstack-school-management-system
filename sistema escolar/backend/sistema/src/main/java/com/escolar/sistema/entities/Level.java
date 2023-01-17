@@ -1,4 +1,4 @@
-package entities;
+package com.escolar.sistema.entities;
 
 import java.util.List;
 
@@ -6,23 +6,25 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 @Entity
-@Table(name="tb_shift")
-public class Shift { /*Turno*/
+@Table(name="tb_level")
+public class Level {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private List<Student> students;
+	@OneToMany
 	private List<Subject> subjects;
-	
-	public Shift(Long id, String name, List<Student> students, List<Subject> subjects) {
+	@OneToMany
+	private List<Teacher> teachers;
+	public Level(Long id, String name, List<Subject> subjects, List<Teacher> teachers) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.students = students;
 		this.subjects = subjects;
+		this.teachers = teachers;
 	}
 	public Long getId() {
 		return id;
@@ -36,18 +38,18 @@ public class Shift { /*Turno*/
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<Student> getStudents() {
-		return students;
-	}
-	public void setStudents(List<Student> students) {
-		this.students = students;
-	}
 	public List<Subject> getSubjects() {
 		return subjects;
 	}
 	public void setSubjects(List<Subject> subjects) {
 		this.subjects = subjects;
 	}
-
+	public List<Teacher> getTeachers() {
+		return teachers;
+	}
+	public void setTeachers(List<Teacher> teachers) {
+		this.teachers = teachers;
+	} 
+	
 	
 }
