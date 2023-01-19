@@ -19,6 +19,11 @@ public class Level {
 	private List<Subject> subjects;
 	@OneToMany
 	private List<Teacher> teachers;
+	
+	
+	public Level() {
+		super();
+	}
 	public Level(Long id, String name, List<Subject> subjects, List<Teacher> teachers) {
 		super();
 		this.id = id;

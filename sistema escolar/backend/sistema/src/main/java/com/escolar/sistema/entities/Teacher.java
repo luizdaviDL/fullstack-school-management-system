@@ -27,6 +27,11 @@ public class Teacher {
 	private List<Subject> especialty;
 	private boolean status;
 	
+	
+	public Teacher() {
+		super();
+	}
+
 	public Teacher(Long id, String name, String lasname, String cpf, String rg, String telephone, String email,
 			String genre, String birthDate, List<Subject> especialty) {
 		super();

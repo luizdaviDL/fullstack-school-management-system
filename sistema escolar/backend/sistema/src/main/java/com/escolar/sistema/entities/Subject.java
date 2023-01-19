@@ -22,6 +22,10 @@ public class Subject {
 	@OneToMany
 	private List<Teacher> teacher;
 	
+	
+	public Subject() {
+		super();
+	}
 
 	public Subject(Long id, String name, Level nivel, List<Teacher> teacher) {
 		super();

@@ -20,6 +20,10 @@ public class Shift { /*Turno*/
 	@OneToMany
 	private List<Subject> subjects;
 	
+	
+	public Shift() {
+		super();
+	}
 	public Shift(Long id, String name, List<Student> students, List<Subject> subjects) {
 		super();
 		this.id = id;

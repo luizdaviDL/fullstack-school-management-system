@@ -26,6 +26,11 @@ public class Classe {
 	@OneToOne
 	private Shift shift; /*turno*/
 	
+	
+	public Classe() {
+		super();
+	}
+
 	public Classe(Long id, String name, List<Student> students, List<Subject> subjects, List<Teacher> teacher,
 			Shift shift) {
 		super();
